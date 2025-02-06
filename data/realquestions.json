@@ -1,0 +1,546 @@
+[
+  {
+    "question": "¿Qué es un rapiére?",
+    "answer": "Espada en francés / Florete"
+  },
+  {
+    "question": "¿Cuál es el rango más alto en sumo?",
+    "answer": "Yokozuna"
+  },
+  {
+    "question": "¿Qué expresión en inglés se usa para referirse a una situación en la que hay un problema y la gente decide ignorarlo?",
+    "answer": "The elefant in the room"
+  },
+  {
+    "question": "¿En qué tipo de carretera Española hay cambios más bruscos de velocidad?",
+    "answer": "Autopistas"
+  },
+  {
+    "question": "¿Quién dijo la frase \"En España de cada 10 cabezas 1 piensa y 9 envisten\"?",
+    "answer": "Antonio Machado"
+  },
+  {
+    "question": "Dime 3 lenguajes de programación",
+    "answer": "Python / Java / Javascript / C / C++ / C# / Kobold / Kotlin / Fortran / Pascal / TypeScript / ..."
+  },
+  {
+    "question": "¿De qué animal proviene el famoso \"Caviar\" reconocido como uno de los más caros manjares?",
+    "answer": "Esturión"
+  },
+  {
+    "question": "Cuando se dice que el coche ha desacelerado ¿Qué está haciendo el coche?",
+    "answer": "A)Frenar para bajar la velocidad B)MANTENER LA MISMA VELOCIDAD C)Dejar que el coche solo baje la velocidad"
+  },
+  {
+    "question": "¿Qué tenista tiene más Grand Slams?",
+    "answer": "Novak Djokovic"
+  },
+  {
+    "question": "¿Por qué las botellas de vino tienen una cavidad pronunciada en la parte inferior de la botella?",
+    "answer": "Para cuando se sirve el vino meter el pulgar en la cavidad y servir mejor"
+  },
+  {
+    "question": "Menciona una compañía que produzca semi conductores",
+    "answer": "TSMC / Samsung / ..."
+  },
+  {
+    "question": "Menciona uno de los 2 Pokémon más grandes",
+    "answer": "Eternatus / Wailord"
+  },
+  {
+    "question": "¿Cuál es el único metal líquido a temperatura ambiente?",
+    "answer": "Mercurio"
+  },
+  {
+    "question": "¿Qué es la emulsión?",
+    "answer": "Una reacción química en la que se mezcla el agua con un aceite o grasa"
+  },
+  {
+    "question": "¿Quién dijo la frase \"Locura es hacer lo mismo una y otra vez y esperar resultados diferentes\"",
+    "answer": "Albert Einstein (Aceptar Far Cry 3)"
+  },
+  {
+    "question": "Menciona un objeto que puedas utilizar con la mano que pueda llegar a mach 1 (Las pistolas no cuentan porque las balas son las que van a mach 1)",
+    "answer": "Látigo"
+  },
+  {
+    "question": "¿Qué significa que un alimento esté confitado?",
+    "answer": "Que está hervido en aceite o frito a baja temperatura"
+  },
+  {
+    "question": "Menciona 5 Pokémon de diferentes líneas evolutivas",
+    "answer": "Charmander / Squirtle / Bulbasaur / Pikachu / Metapod / ..."
+  },
+  {
+    "question": "¿Dónde se inventó la ensaladilla rusa?",
+    "answer": "Rusia"
+  },
+  {
+    "question": "¿Dónde se inventó la hamburguesa?",
+    "answer": "Hamburgo"
+  },
+  {
+    "question": "¿Quién compuso \"El lago de los cisnes\"?",
+    "answer": "Chaikovski"
+  },
+  {
+    "question": "Menciona 1 - 2 de los 4 Grand Slams que existen en el tenis",
+    "answer": "Australian Open / Roland Garros / Wimbledon / US Open"
+  },
+  {
+    "question": "¿Cómo se dice cuando una tormenta reduce su intensidad?",
+    "answer": "Amainar"
+  },
+  {
+    "question": "Menciona 3 de los 5 componentes que tiene el ramen Japonés",
+    "answer": "Fideos / Toppings / Aceite / Concentrado / Caldo"
+  },
+  {
+    "question": "¿Cuál es el puerto informático más usado en el mundo?",
+    "answer": "USB A / USB C"
+  },
+  {
+    "question": "¿Cuáles son los 7 sentidos que posee el ser humano?",
+    "answer": "Gusto / Tacto / Olfato / Audición / Vista / Sentido de la existencia / Sentido de la Gravedad"
+  },
+  {
+    "question": "¿Cómo se llama el sonido que hace la leña al quemarse?",
+    "answer": "Crepitar"
+  },
+  {
+    "question": "¿Qué significa \"Hacer una inferencia\"? (Se puede dar un sinónimo o ejemplo)",
+    "answer": "Hacer una deducción"
+  },
+  {
+    "question": "¿Cuál es la excusa más usada para declinar un plan?",
+    "answer": "No tengo tiempo"
+  },
+  {
+    "question": "¿De dónde proviene el diseño que tienen las sillas \"Gaming\"?",
+    "answer": "De los asientos de automóviles de lujo"
+  },
+  {
+    "question": "¿Qué significan las siglas \"RAM\" en el campo de la informática?",
+    "answer": "Random Access Memory"
+  },
+  {
+    "question": "En la cultura griega antigua ¿Quién era el dios de la Muerte?",
+    "answer": "Thanatos"
+  },
+  {
+    "question": "¿A qué temperatura de las siguientes no se evapora el agua?",
+    "answer": "A)100 Grados Celsius B)Temperatura Ambiente (25 Celsius) C)150 GRADOS CELSIUS"
+  },
+  {
+    "question": "¿A qué parte del cuerpo le afectan los mareos?",
+    "answer": "La cabezas"
+  },
+  {
+    "question": "El toque de quién convertía a la gente en oro",
+    "answer": "Midas"
+  },
+  {
+    "question": "Si los metros se usan para representar distancia ¿Para qué magnitud son las calorías?",
+    "answer": "Energía o Calor"
+  },
+  {
+    "question": "¿Cuál era la profesión de Nikola Tesla?",
+    "answer": "Inventor (No era científico)"
+  },
+  {
+    "question": "¿Cuál es el elemento más común en el nucleo terrestre?",
+    "answer": "Hierro"
+  },
+  {
+    "question": "¿En qué consola de videojuegos salió por primera vez el \"The Legend of Zelda: Breath of The Wild\"",
+    "answer": "Wii U"
+  },
+  {
+    "question": "¿Cuál es el nombre de la siguiente canción? (Poner canción en youtube)",
+    "answer": "Canon in D de Pechelbel"
+  },
+  {
+    "question": "¿En qué prefectura de Japón se popularizó el Takoyaki?",
+    "answer": "Osaka"
+  },
+  {
+    "question": "¿Qué videojuego causó tal sensación mundial que la gente se colaba en casas de otras personas y tenía accidentes de coche?",
+    "answer": "Pokémon Go"
+  },
+  {
+    "question": "¿Cómo se llama la plataforma más utilizada para Streaming?",
+    "answer": "Twitch"
+  },
+  {
+    "question": "¿Cómo se llamaba la bomba que se lanzó sobre hiroshima?",
+    "answer": "Little Boy"
+  },
+  {
+    "question": "¿Cómo se llamaba la bomba que se lanzó sobre Nagasaki?",
+    "answer": "Fat Man"
+  },
+  {
+    "question": "¿Cuál es el deporte más visto en los Estados Unidos?",
+    "answer": "Fútbol Americano"
+  },
+  {
+    "question": "¿De qué país es originario el queso brie?",
+    "answer": "Francia"
+  },
+  {
+    "question": "¿Cuál es la moneda de Japón?",
+    "answer": "Yen"
+  },
+  {
+    "question": "¿Cuál es la moneda de Corea?",
+    "answer": "Won"
+  },
+  {
+    "question": "¿Cuál es la moneda de China?",
+    "answer": "Yuan"
+  },
+  {
+    "question": "¿Quién inventó la penicilina?",
+    "answer": "Alexander Fleming"
+  },
+  {
+    "question": "¿Quién publicó la relatividad general y especial?",
+    "answer": "Albert Einstein"
+  },
+  {
+    "question": "¿Cuántos elementos forman la Tabla Periódica?",
+    "answer": "118"
+  },
+  {
+    "question": "En una cerveza ¿qué significa el acrónimo IPA?",
+    "answer": "Indian Pale Ale"
+  },
+  {
+    "question": "¿A cuántos kilómetros equivale una milla aproximadamente?",
+    "answer": "1.6"
+  },
+  {
+    "question": "¿En qué provincia de España se encuentra el parque temático PortAventura?",
+    "answer": "Tarragona"
+  },
+  {
+    "question": "¿De qué país es originario el autor que puso de moda la frase \"La luna es hermosa\"?",
+    "answer": "Japón (Autor: Hachi Itou)"
+  },
+  {
+    "question": "¿Qué jugador ha metido más triples en la NBA?",
+    "answer": "Stephen Curry"
+  },
+  {
+    "question": "¿Cuál es la línea más larga del metro de Madrid?",
+    "answer": "La línea 12 (41 KM)"
+  },
+  {
+    "question": "¿Quién pintó Las meninas?",
+    "answer": "Velázquez"
+  },
+  {
+    "question": "¿Qué colores tiene el cubo Rubik?",
+    "answer": "Rojo/Verde/Blanco/Naranja/Amarillo/Azul"
+  },
+  {
+    "question": "¿Qué es un palíndromo?",
+    "answer": "Palabra o número que se lee igual por la derecha que por la izquierda"
+  },
+  {
+    "question": "¿De qué país se originan los gofres?",
+    "answer": "Estados Unidos"
+  },
+  {
+    "question": "¿Cómo se llamaba el submarino que explotó mientras descendía para ver el Titanic?",
+    "answer": "Titan"
+  },
+  {
+    "question": "¿Cuál es el lugar más frío de la tierra?",
+    "answer": "La Antártida"
+  },
+  {
+    "question": "¿Cuál es el órgano más grande del cuerpo humano?",
+    "answer": "La piel"
+  },
+  {
+    "question": "¿Cuál es el animal que más muertes provoca cada año?",
+    "answer": "El mosquito"
+  },
+  {
+    "question": "¿Qué gas de la atmósfera nos protege de la radiación ultravioleta?",
+    "answer": "Ozono"
+  },
+  {
+    "question": "¿En qué país nació Mozart?",
+    "answer": "Austria"
+  },
+  {
+    "question": "¿Cuántas veces ha ganado España Eurovisión?",
+    "answer": "Dos"
+  },
+  {
+    "question": "¿Qué concurso musical impulsó la carrera de Aitana?",
+    "answer": "Operación Triunfo"
+  },
+  {
+    "question": "¿Qué signo del zodiaco es Harry Styles?",
+    "answer": "Acuario"
+  },
+  {
+    "question": "¿Título del disco en el que los Beatles cruzan una calle?",
+    "answer": "Abbey Road"
+  },
+  {
+    "question": "¿Cuál es el verdadero nombre de Bad Bunny?",
+    "answer": "Benito Antonio Martínez Ocasio"
+  },
+  {
+    "question": "¿Cómo se titulaba el primer single de Britney Spears?",
+    "answer": "Baby One More Time"
+  },
+  {
+    "question": "¿Nombre del último disco de Muse?",
+    "answer": "Will Of The People"
+  },
+  {
+    "question": "¿De qué nacionalidad es Shakira?",
+    "answer": "Colombiana"
+  },
+  {
+    "question": "¿Cuántos integrantes tiene la banda BTS?",
+    "answer": "Siete"
+  },
+  {
+    "question": "¿Quién canta el tema \"Rolling in the Deep\"?",
+    "answer": "Adele"
+  },
+  {
+    "question": "¿Dónde nació Taylor Swift?",
+    "answer": "Pensilvania"
+  },
+  {
+    "question": "¿Cómo se llama el cantante del Gangnam Style?",
+    "answer": "PSY"
+  },
+  {
+    "question": "¿En qué año fueron los Juegos Olímpicos de Londres?",
+    "answer": "2012"
+  },
+  {
+    "question": "¿Cómo murió Kobe Bryant?",
+    "answer": "En un accidente de helicóptero"
+  },
+  {
+    "question": "¿Cuántas veces ha ganado Rafael Nadal el torneo de Wimbledon?",
+    "answer": "Dos"
+  },
+  {
+    "question": "¿Quién es el máximo goleador de la historia del fútbol?",
+    "answer": "Cristiano Ronaldo"
+  },
+  {
+    "question": "¿Qué selección ha ganado más Copas Mundiales de Fútbol?",
+    "answer": "Brasil"
+  },
+  {
+    "question": "¿Quién es el atleta con más medallas olímpicas?",
+    "answer": "Michael Phelps (23 oros/3 platas/2 bronces)"
+  },
+  {
+    "question": "¿Quién es el futbolista con más balones de oro?",
+    "answer": "Lionel Messi (6)"
+  },
+  {
+    "question": "¿Cuál es el equipo de la NBA con más títulos?",
+    "answer": "Los Boston Celtics"
+  },
+  {
+    "question": "¿Cuán larga es una maratón?",
+    "answer": "42 Km"
+  },
+  {
+    "question": "¿En qué equipo jugó Michael Jordan la mayor parte de su carrera?",
+    "answer": "Chicago Bulls"
+  },
+  {
+    "question": "¿Cómo se llama el lugar donde se realizan las carreras de caballos?",
+    "answer": "Hipódromo"
+  },
+  {
+    "question": "¿Dónde se firmó la Constitución española de 1812?",
+    "answer": "Cádiz"
+  },
+  {
+    "question": "¿Cuál era el apodo de Fernando VII?",
+    "answer": "El deseado"
+  },
+  {
+    "question": "¿En qué año se firmó el Tratado de Versalles?",
+    "answer": "1919"
+  },
+  {
+    "question": "¿Quién fundó Roma?",
+    "answer": "Rómulo y Remo"
+  },
+  {
+    "question": "¿Quién fue el discípulo de Platón?",
+    "answer": "Aristóteles"
+  },
+  {
+    "question": "¿Quién fue el discípulo de Aristóteles?",
+    "answer": "Carlo Magno"
+  },
+  {
+    "question": "¿Quién fue el primer presidente de EE.UU?",
+    "answer": "George Washington"
+  },
+  {
+    "question": "¿En qué año abandonó Reino Unido la Unión Europea?",
+    "answer": "2020"
+  },
+  {
+    "question": "¿En qué año se firmó el Tratado de Utrech?",
+    "answer": "1713"
+  },
+  {
+    "question": "¿Cómo se llamaba el primer rey de Asturias?",
+    "answer": "Pelayo"
+  },
+  {
+    "question": "¿Cuál es el nombre de la famosa batalla donde Napoleón Bonaparte fue derrotado?",
+    "answer": "Waterloo"
+  },
+  {
+    "question": "¿Cuál es el apellido de Rocky en la saga de películas del mismo título?",
+    "answer": "Balboa"
+  },
+  {
+    "question": "¿Cuál es el río más largo de España?",
+    "answer": "El tajo"
+  },
+  {
+    "question": "¿Cómo se conoce comúnmente el cloruro de sodio?",
+    "answer": "Sal"
+  },
+  {
+    "question": "¿Qué significa la palabra \"Mediocre\"?",
+    "answer": "Se le dice a algo o alguien que está en la media"
+  },
+  {
+    "question": "¿Quién pintó \"La última cena\"?",
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "question": "¿Cuál es el metal más ligero?",
+    "answer": "Aluminio"
+  },
+  {
+    "question": "¿En qué año llegó el hombre a la Luna?",
+    "answer": "1969"
+  },
+  {
+    "question": "¿Cuál es la capital de Australia?",
+    "answer": "Canberra"
+  },
+  {
+    "question": "¿Qué animal es el símbolo de WWF (World Wildlife Fund)?",
+    "answer": "Panda"
+  },
+  {
+    "question": "¿Cuál es el idioma más hablado en el mundo?",
+    "answer": "Chino mandarín"
+  },
+  {
+    "question": "¿En qué país se encuentran las pirámides de Giza?",
+    "answer": "Egipto"
+  },
+  {
+    "question": "¿Cuál es la isla más grande del mundo?",
+    "answer": "Groenlandia"
+  },
+  {
+    "question": "¿Qué es un “soneto”?",
+    "answer": "Un poema de 14 versos"
+  },
+  {
+    "question": "¿Qué animal es conocido como \"el rey de la selva\"?",
+    "answer": "León"
+  },
+  {
+    "question": "¿Cuál es el país más grande del mundo por superficie?",
+    "answer": "Rusia"
+  },
+  {
+    "question": "¿Qué unidad se usa para medir la fuerza?",
+    "answer": "Newton"
+  },
+  {
+    "question": "¿Cuál es el elemento químico más abundante en el universo?",
+    "answer": "Hidrógeno"
+  },
+  {
+    "question": "¿Qué ciudad es conocida como \"La Gran Manzana\"?",
+    "answer": "Nueva York"
+  },
+  {
+    "question": "¿Cómo se llama el triángulo con todos sus lados diferentes?",
+    "answer": "Escaleno"
+  },
+  {
+    "question": "¿Cuál es la ciudad más poblada del mundo?",
+    "answer": "Tokio"
+  },
+  {
+    "question": "¿Qué planeta es conocido como el \"Planeta Rojo\"?",
+    "answer": "Marte"
+  },
+  {
+    "question": "¿Cómo se llama el himno nacional de Francia?",
+    "answer": "La Marsellesa"
+  },
+  {
+    "question": "¿Cómo se llama la capital de Canadá?",
+    "answer": "Ottawa"
+  },
+  {
+    "question": "¿Qué sustancia en la sangre transporta el oxígeno?",
+    "answer": "Hemoglobina"
+  },
+  {
+    "question": "¿En qué país se encuentra el Taj Mahal?",
+    "answer": "India"
+  },
+  {
+    "question": "¿Cuál es el único planeta que gira en sentido contrario al de los demás?",
+    "answer": "Venus"
+  },
+  {
+    "question": "¿Quién escribió \"El Principito\"?",
+    "answer": "Antoine de Saint-Exupéry"
+  },
+  {
+    "question": "¿Cuál es el país más poblado de África?",
+    "answer": "Nigeria"
+  },
+  {
+    "question": "¿En qué país se originó el yoga?",
+    "answer": "India"
+  },
+  {
+    "question": "¿Qué personaje es conocido como \"El Caballero de la Triste Figura\"?",
+    "answer": "Don Quijote"
+  },
+  {
+    "question": "¿Qué artista es conocido por su pintura \"El Grito\"?",
+    "answer": "Edvard Munch"
+  },
+  {
+    "question": "¿Cuál es el nombre del río que atraviesa Londres?",
+    "answer": "Támesis"
+  },
+  {
+    "question": "¿Cuál es el meme que de fondo tiene la canción \"Can you feel my heart\"?",
+    "answer": "Gigachad"
+  }
+]
