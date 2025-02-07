@@ -1,9 +1,6 @@
 # Trivial Expo Project
 
-Welcome to the Trivial Expo App, a modern, cross-platform application built using Expo and React Native. This project leverages Expo Router for file-based routing and includes a Python utility for converting question data from CSV to JSON format.
-
-## About Trivial
-Trivial is envisioned as a simple yet powerful trivia game that challenges your knowledge across multiple topics. Powered by dynamic question management and a flexible architecture, it serves as a foundation for engaging quiz experiences. Use the provided CSV-to-JSON conversion script to easily populate the app with new trivia content.
+Welcome to the Trivial Expo App, a modern, cross-platform application built using Expo and React Native. This project is a simple trivia game that allows you to create and manage your own questions. Just to play with friends and have a good time.
 
 ## Features
 
