@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Alert } from 'react-native';
+import { useRouter } from 'expo-router';
 import questionsData from '../data/realquestions.json';
+import { useTheme } from './themeContext';
 
 function shuffleArray<T>(array: T[]): T[] {
   let currentIndex = array.length;
@@ -18,6 +20,8 @@ export default function PlayScreen() {
   const [questionsArr, setQuestionsArr] = useState<{ question: string, answer: string }[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
+  const router = useRouter();
+  const { theme } = useTheme();
 
   useEffect(() => {
     const shuffledQuestions = shuffleArray(questionsData);
@@ -37,12 +41,15 @@ export default function PlayScreen() {
   const currentQuestion = questionsArr[currentIndex];
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: theme === 'dark' ? '#333' : '#fff' }]}>
+      <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
+        <Text style={styles.buttonText}>Back</Text>
+      </TouchableOpacity>
       {currentQuestion && (
         <>
-          <Text style={styles.questionText}>{currentQuestion.question}</Text>
+          <Text style={[styles.questionText, { color: theme === 'dark' ? '#fff' : '#333' }]}>{currentQuestion.question}</Text>
           {showAnswer && (
-            <Text style={styles.answerText}>{currentQuestion.answer}</Text>
+            <Text style={[styles.answerText, { color: theme === 'dark' ? '#ccc' : 'gray' }]}>{currentQuestion.answer}</Text>
           )}
         </>
       )}
@@ -87,5 +94,13 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     fontSize: 18,
+  },
+  backButton: {
+    position: 'absolute',
+    top: 40,
+    left: 20,
+    backgroundColor: '#007AFF',
+    padding: 10,
+    borderRadius: 8,
   },
 }); 
