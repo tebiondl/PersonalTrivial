@@ -2,10 +2,13 @@ import React from 'react';
 import { View, Text, Switch, StyleSheet, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTheme } from './themeContext';
+import { useNetwork } from './networkContext';
 
 export default function OptionsScreen() {
   const router = useRouter();
   const { theme, toggleTheme } = useTheme();
+  const { mode, toggleMode } = useNetwork();
+  const isOnlineMode = mode === 'online';
   const isDarkMode = theme === 'dark';
 
   return (
@@ -19,6 +22,13 @@ export default function OptionsScreen() {
         <Switch
           value={isDarkMode}
           onValueChange={toggleTheme}
+        />
+      </View>
+      <View style={styles.switchContainer}>
+        <Text style={{ color: isDarkMode ? '#fff' : '#000' }}>Online Mode</Text>
+        <Switch
+          value={isOnlineMode}
+          onValueChange={toggleMode}
         />
       </View>
     </View>

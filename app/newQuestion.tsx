@@ -10,14 +10,18 @@ import {
 import * as FileSystem from "expo-file-system";
 import { useRouter } from "expo-router";
 import { useTheme } from "./themeContext";
+import { useNetwork } from './networkContext';
+import Constants from 'expo-constants';
 
 export default function NewQuestion() {
   const router = useRouter();
   const { theme } = useTheme();
+  const { mode } = useNetwork();
   const isDarkMode = theme === "dark";
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
   const fileUri = FileSystem.documentDirectory + "realquestions.json";
+  const { FIREBASE_BASE_URL: baseUrl, API_KEY_FIREBASE: apiKey } = Constants.expoConfig?.extra || {};
 
   const saveQuestion = async () => {
     try {
@@ -37,6 +41,26 @@ export default function NewQuestion() {
         fileUri,
         JSON.stringify(questionsArr, null, 2)
       );
+      if (mode === "online") {
+        // Attempt to sync questions online similar to Python script
+        const finalData = { questions: questionsArr };
+        try {
+          const postResponse = await fetch(`${baseUrl}/addQuestions`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "x-api-key": apiKey
+            },
+            body: JSON.stringify(finalData)
+          });
+          if (!postResponse.ok) {
+            throw new Error("Failed to sync question online.");
+          }
+        } catch (postError) {
+          console.error("Error syncing question online", postError);
+          Alert.alert("Warning", "Question saved locally but failed to sync online.");
+        }
+      }
       Alert.alert("Success", "Question saved successfully!");
       router.back();
     } catch (error) {

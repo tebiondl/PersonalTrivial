@@ -3,6 +3,8 @@ import { View, Text, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
 import questionsData from '../data/realquestions.json';
 import { useTheme } from './themeContext';
+import { useNetwork } from './networkContext';
+import Constants from 'expo-constants';
 
 function shuffleArray<T>(array: T[]): T[] {
   let currentIndex = array.length;
@@ -17,17 +19,44 @@ function shuffleArray<T>(array: T[]): T[] {
 }
 
 export default function PlayScreen() {
+  const { mode } = useNetwork();
   const [questionsArr, setQuestionsArr] = useState<{ question: string, answer: string }[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
   const router = useRouter();
   const { theme } = useTheme();
 
+  const { FIREBASE_BASE_URL: baseUrl, API_KEY_FIREBASE: apiKey } = Constants.expoConfig?.extra || {};
+
   useEffect(() => {
-    const shuffledQuestions = shuffleArray(questionsData);
-    setQuestionsArr(shuffledQuestions);
-    setCurrentIndex(0);
-  }, []);
+    if (mode === 'online') {
+      fetch(`${baseUrl}/getQuestions`, { headers: { 'x-api-key': apiKey } })
+        .then(response => {
+          if (!response.ok) {
+            console.log(response);
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          const questions = data as { question: string, answer: string }[];
+          const shuffledQuestions = shuffleArray(questions);
+          setQuestionsArr(shuffledQuestions);
+          setCurrentIndex(0);
+        })
+        .catch(error => {
+          console.error('Error fetching questions:', error);
+          // Fallback to offline questions
+          const shuffledQuestions = shuffleArray(questionsData);
+          setQuestionsArr(shuffledQuestions);
+          setCurrentIndex(0);
+        });
+    } else {
+      const shuffledQuestions = shuffleArray(questionsData);
+      setQuestionsArr(shuffledQuestions);
+      setCurrentIndex(0);
+    }
+  }, [mode]);
 
   const handleNext = () => {
     if (currentIndex < questionsArr.length - 1) {

@@ -3,6 +3,7 @@
 .vscode/
 android/
 ios/
+releases/
 
 
 # dependencies

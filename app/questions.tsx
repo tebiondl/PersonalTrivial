@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   View,
   Text,
@@ -10,12 +10,19 @@ import {
 import { useRouter } from "expo-router";
 import { useTheme } from "./themeContext";
 import questionsData from "../data/realquestions.json";
+import { useNetwork } from "./networkContext";
+import Constants from "expo-constants";
 
 export default function Questions() {
   const router = useRouter();
   const { theme } = useTheme();
+  const { mode } = useNetwork();
   const isDarkMode = theme === "dark";
   const [searchQuery, setSearchQuery] = React.useState("");
+
+  const { FIREBASE_BASE_URL: baseUrl, API_KEY_FIREBASE: apiKey } =
+    Constants.expoConfig?.extra || {};
+  const [questions, setQuestions] = React.useState([]);
 
   const levenshtein = (a: string, b: string): number => {
     const m = a.length;
@@ -45,24 +52,46 @@ export default function Questions() {
     return matrix[m][n];
   };
 
+  React.useEffect(() => {
+    async function loadQuestions() {
+      if (mode === "online") {
+        try {
+          const response = await fetch(`${baseUrl}/getQuestions`, { headers: { "x-api-key": apiKey } });
+          const data = (await response.json()) as { question: string; answer: string }[];
+          console.log("Fetched questions:", data);
+          setQuestions(data);
+        } catch (error) {
+          console.error("Error fetching questions:", error);
+          setQuestions(questionsData);
+        }
+      } else {
+        setQuestions(questionsData);
+      }
+    }
+    loadQuestions();
+  }, [mode, baseUrl, apiKey]);
+
   const filteredQuestions = React.useMemo(() => {
-    if (!searchQuery.trim()) return questionsData;
+    if (!searchQuery.trim()) return questions;
     const queryText = searchQuery.toLowerCase();
-    return questionsData.filter((item) => {
+
+    return questions.filter((item) => {
       const questionText = item.question.toLowerCase();
+
       if (questionText.includes(queryText)) return true;
       const words = questionText.split(/\W+/);
       return words.some((word) => {
         if (!word) return false;
-        // Check similarity with the whole word
-        const wholeSim = 1 - levenshtein(queryText, word) / Math.max(queryText.length, word.length);
+        const wholeSim =
+          1 - levenshtein(queryText, word) /
+            Math.max(queryText.length, word.length);
         if (wholeSim >= 0.7) return true;
-        // If the word is longer than the query, use sliding-window matching
         if (word.length > queryText.length) {
           let bestSim = 0;
           for (let i = 0; i <= word.length - queryText.length; i++) {
             const substring = word.substring(i, i + queryText.length);
-            const sim = 1 - levenshtein(queryText, substring) / queryText.length;
+            const sim =
+              1 - levenshtein(queryText, substring) / queryText.length;
             if (sim >= 0.7) return true;
             bestSim = Math.max(bestSim, sim);
           }
@@ -71,7 +100,7 @@ export default function Questions() {
         return false;
       });
     });
-  }, [searchQuery]);
+  }, [questions, searchQuery]);
 
   return (
     <View
